@@ -7,13 +7,14 @@ checkbtn.addEventListener("click", () => {
 
   let count = 0;
   if (checkPassword.length >= 8) {
+      let specialCharacter = checkPassword.match(/[^a-zA-Z0-9]/g);
     for (let i = 0; i < checkPassword.length; i++) {
-      if (checkPassword.charAt(i) == checkPassword.charAt(i).toUpperCase()) {
+        let char = checkPassword.charAt(i);
+      if (char === char.toUpperCase() && char !== char.toLowerCase() ) {
         count = count + 1;
         break;
       }
     }
-    let specialCharacter = checkPassword.match(/[^a-zA-Z0-9]/g);
     let presentNum = checkPassword.match(/\d/g);
     console.log(specialCharacter);
     console.log(presentNum);
