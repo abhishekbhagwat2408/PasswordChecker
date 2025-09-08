@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #333;
+}
+
+/* Container for input + button */
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  width: 350px;
+  text-align: center;
+}
+
+#password {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+#password:focus {
+  border-color: #2575fc;
+}
+
+
+#checkbtn {
+  width: 100%;
+  padding: 10px;
+  background: #2575fc;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#checkbtn:hover {
+  background: #1a5dd9;
+}
+
+/* Info message */
+#info {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+}
